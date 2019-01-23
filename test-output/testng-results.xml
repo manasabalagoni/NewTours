@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Browser Opened]]>
+    </line>
   </reporter-output>
-  <suite name="Flight_Reservation_Functional_Test" duration-ms="9865" started-at="2019-01-11T14:35:31Z" finished-at="2019-01-11T14:35:41Z">
+  <suite name="Flight_Reservation_Functional_Test" duration-ms="11109" started-at="2019-01-23T22:03:17Z" finished-at="2019-01-23T22:03:28Z">
     <groups>
     </groups>
-    <test name="Functional_Test" duration-ms="9865" started-at="2019-01-11T14:35:31Z" finished-at="2019-01-11T14:35:41Z">
+    <test name="Functional_Test" duration-ms="11109" started-at="2019-01-23T22:03:17Z" finished-at="2019-01-23T22:03:28Z">
       <class name="com.demoaut.newtours.testcases.LoginTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@cc285f4]" name="launchBrowser" is-config="true" duration-ms="5884" started-at="2019-01-11T14:35:31Z" finished-at="2019-01-11T14:35:37Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="launchBrowser" is-config="true" duration-ms="5141" started-at="2019-01-23T22:03:17Z" finished-at="2019-01-23T22:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Browser Opened]]>
+            </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToMercuryTours()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@cc285f4]" name="loginToMercuryTours" duration-ms="3928" started-at="2019-01-11T14:35:37Z" finished-at="2019-01-11T14:35:41Z">
+        <test-method status="PASS" signature="loginToMercuryTours()[pri:1, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="loginToMercuryTours" duration-ms="4192" started-at="2019-01-23T22:03:23Z" finished-at="2019-01-23T22:03:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToMercuryTours -->
+        <test-method status="PASS" signature="findFlightTest()[pri:2, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="findFlightTest" duration-ms="963" started-at="2019-01-23T22:03:27Z" depends-on-methods="com.demoaut.newtours.testcases.LoginTest.loginToMercuryTours" finished-at="2019-01-23T22:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlightTest -->
+        <test-method status="PASS" signature="selectFlightTest()[pri:3, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="selectFlightTest" duration-ms="648" started-at="2019-01-23T22:03:28Z" finished-at="2019-01-23T22:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFlightTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="tearDown" is-config="true" duration-ms="126" started-at="2019-01-23T22:03:28Z" finished-at="2019-01-23T22:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.demoaut.newtours.testcases.LoginTest -->
     </test> <!-- Functional_Test -->
   </suite> <!-- Flight_Reservation_Functional_Test -->

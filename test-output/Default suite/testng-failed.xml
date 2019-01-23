@@ -5,8 +5,11 @@
     <classes>
       <class name="com.demoaut.newtours.testcases.LoginTest">
         <methods>
+          <include name="loginToMercuryTours"/>
+          <include name="findFlightTest"/>
+          <include name="selectFlightTest"/>
           <include name="launchBrowser"/>
-          <include name="loginTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.demoaut.newtours.testcases.LoginTest -->
     </classes>

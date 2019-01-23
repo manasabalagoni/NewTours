@@ -5,8 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.demoaut.newtours.constants.IConstants;
@@ -16,20 +18,26 @@ import com.demoaut.newtours.pages.LoginPage;
 import com.demoaut.newtours.pages.SelectFlightPage;
 
 public class LoginTest {
-
+	
+	
 	public WebDriver driver;
+
 	// LoginPage loginPage;
 
+	
 	@BeforeTest
-	public void launchBrowser() {
+	@Parameters({"browserName"})
+	public void launchBrowser(String browserName) {
 
+		if(browserName.toLowerCase().equals("chrome")) {
 		System.setProperty("webdriver.chrome.driver", IConstants.CHROMEDRIVERPATH);
 		driver = new ChromeDriver();
+		Reporter.log("Browser Opened",true);
 		driver.manage().timeouts().implicitlyWait(IConstants.IMPLICITWAITSTND, TimeUnit.SECONDS);
 		driver.get("http://newtours.demoaut.com");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
+		}
 	}
 
 	@Test(priority=1, enabled=true)
@@ -40,6 +48,9 @@ public class LoginTest {
 		FlightConfirmation flightConfirmation = new FlightConfirmation(driver);
 		
 		String currentTitle = loginPage.loginToDemoaut("mercury", "mercury");
+		
+		
+		// checking if there was any error thrown 
 		String pageSource = driver.getPageSource();
 
 		if (pageSource.contains("Whitelabel Error")) {

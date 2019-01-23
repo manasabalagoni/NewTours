@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Flight_Reservation_Functional_Test">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Flight_Reservation_Functional_Test" title="com.demoaut.newtours.testcases.LoginTest" hash-for-method="findFlightTest">findFlightTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Flight_Reservation_Functional_Test" title="com.demoaut.newtours.testcases.LoginTest" hash-for-method="loginToMercuryTours">loginToMercuryTours</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Flight_Reservation_Functional_Test" title="com.demoaut.newtours.testcases.LoginTest" hash-for-method="selectFlightTest">selectFlightTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Flight_Reservation_Functional_Test -->
@@ -125,9 +135,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="findFlightTest">
+                  </a> <!-- findFlightTest -->
+                  <span class="method-name">findFlightTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginToMercuryTours">
                   </a> <!-- loginToMercuryTours -->
                   <span class="method-name">loginToMercuryTours</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectFlightTest">
+                  </a> <!-- selectFlightTest -->
+                  <span class="method-name">selectFlightTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,7 +166,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Flight_Reservation_Functional_Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.demoaut.extentreportlistener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Functional_Test&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.demoaut.newtours.testcases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
@@ -184,16 +212,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginToMercuryTours')
 data.setCell(0, 2, 'com.demoaut.newtours.testcases.LoginTest')
-data.setCell(0, 3, 3928);
+data.setCell(0, 3, 4192);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'findFlightTest')
+data.setCell(1, 2, 'com.demoaut.newtours.testcases.LoginTest')
+data.setCell(1, 3, 963);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'selectFlightTest')
+data.setCell(2, 2, 'com.demoaut.newtours.testcases.LoginTest')
+data.setCell(2, 3, 648);
 window.suiteTableData['Flight_Reservation_Functional_Test']= { tableData: data, tableDiv: 'times-div-Flight_Reservation_Functional_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Flight_Reservation_Functional_Test">
               </div> <!-- times-div-Flight_Reservation_Functional_Test -->
             </div> <!-- times-div -->
@@ -221,13 +257,25 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoaut.newtours.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchBrowser</span>
+                <span class="method-name">launchBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginToMercuryTours</span>
-                <span class="method-start">5915 ms</span>
+                <span class="method-start">5166 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findFlightTest</span>
+                <span class="method-start">9365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectFlightTest</span>
+                <span class="method-start">10330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10979 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
