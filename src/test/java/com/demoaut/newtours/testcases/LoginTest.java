@@ -10,7 +10,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.demoaut.newtours.constants.IConstants;
+import com.demoaut.newtours.pages.FindFlightPage;
+import com.demoaut.newtours.pages.FlightConfirmation;
 import com.demoaut.newtours.pages.LoginPage;
+import com.demoaut.newtours.pages.SelectFlightPage;
 
 public class LoginTest {
 
@@ -26,11 +29,16 @@ public class LoginTest {
 		driver.get("http://newtours.demoaut.com");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		
 	}
 
-	@Test
+	@Test(priority=1, enabled=true)
 	public void loginToMercuryTours() {
 		LoginPage loginPage = new LoginPage(driver);
+		
+		SelectFlightPage selectFlight = new SelectFlightPage(driver);
+		FlightConfirmation flightConfirmation = new FlightConfirmation(driver);
+		
 		String currentTitle = loginPage.loginToDemoaut("mercury", "mercury");
 		String pageSource = driver.getPageSource();
 
@@ -43,6 +51,29 @@ public class LoginTest {
 		}
 
 	}
+	
+	@Test(dependsOnMethods= {"loginToMercuryTours"}, priority=2)
+	public void findFlightTest() {
+		
+		FindFlightPage findFlightPage = new FindFlightPage(driver);
+		findFlightPage.findFlight();
+		String title = findFlightPage.verifySelectFlightTitle();
+				
+				Assert.assertEquals(title, "Select a Flight: Mercury Tours");
+	}
+	
+	@Test(priority=3)
+	public void selectFlightTest() {
+		
+		SelectFlightPage selectFlightPage = new SelectFlightPage(driver);
+		
+		selectFlightPage.selectFlights();
+		String title=selectFlightPage.verifyBookFlightTitle();
+		Assert.assertEquals(title, "Book a Flight: Mercury Tours");
+		
+	}
+	
+	
 	
 	@AfterTest
 	public void tearDown() {

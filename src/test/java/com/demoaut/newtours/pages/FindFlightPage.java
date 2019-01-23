@@ -22,21 +22,46 @@ public class FindFlightPage {
 	@FindBy(xpath="//input[@name='findFlights']")
 	@CacheLookup
 	private WebElement continueButton;
-
 	
+	@FindBy(xpath="//input[@value='oneway']")
+	@CacheLookup
+	private WebElement oneWayRadioBtn;
+
+	@FindBy(name="fromPort")
+	@CacheLookup
+	private WebElement originCity;
+	
+	@FindBy(name="toPort")
+	@CacheLookup
+	private WebElement destinationCity;
+
 	public FindFlightPage(WebDriver driver) {
 		findFlightPageDriver=driver;
 		PageFactory.initElements(driver, this);
 		
 	}
 	public void findFlight(){
+		oneWayRadioBtn.click();
 		
+		//Select Departure/Origin city
+		Select selectOrigin = new Select(originCity);
+		selectOrigin.selectByValue("New York");
+		
+		//Select destination city
+		Select selectDestination = new Select(destinationCity);
+		selectDestination.selectByValue("Seattle");
 		travelClass.click();
+		
 		Select selectCarrier= new Select(carrier);
 		selectCarrier.selectByIndex(2); // Unified Airlines
+		
 		continueButton.click();
 	}
 	
+	public String verifySelectFlightTitle() {
+		return findFlightPageDriver.getTitle();
 		
+	}
 	
+			
 }
