@@ -5,12 +5,12 @@
       <![CDATA[Browser Opened]]>
     </line>
   </reporter-output>
-  <suite name="Flight_Reservation_Functional_Test" duration-ms="11109" started-at="2019-01-23T22:03:17Z" finished-at="2019-01-23T22:03:28Z">
+  <suite name="Flight_Reservation_Functional_Test" duration-ms="10549" started-at="2019-01-24T17:40:28Z" finished-at="2019-01-24T17:40:39Z">
     <groups>
     </groups>
-    <test name="Functional_Test" duration-ms="11109" started-at="2019-01-23T22:03:17Z" finished-at="2019-01-23T22:03:28Z">
+    <test name="Functional_Test" duration-ms="10549" started-at="2019-01-24T17:40:28Z" finished-at="2019-01-24T17:40:39Z">
       <class name="com.demoaut.newtours.testcases.LoginTest">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="launchBrowser" is-config="true" duration-ms="5141" started-at="2019-01-23T22:03:17Z" finished-at="2019-01-23T22:03:22Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="launchBrowser" is-config="true" duration-ms="4943" started-at="2019-01-24T17:40:28Z" finished-at="2019-01-24T17:40:33Z">
           <params>
             <param index="0">
               <value>
@@ -24,19 +24,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToMercuryTours()[pri:1, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="loginToMercuryTours" duration-ms="4192" started-at="2019-01-23T22:03:23Z" finished-at="2019-01-23T22:03:27Z">
+        <test-method status="PASS" signature="loginToMercuryTours()[pri:1, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="loginToMercuryTours" duration-ms="4015" started-at="2019-01-24T17:40:33Z" description="Description: Testing if user is abole to login to Mecrcury Tours" finished-at="2019-01-24T17:40:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToMercuryTours -->
-        <test-method status="PASS" signature="findFlightTest()[pri:2, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="findFlightTest" duration-ms="963" started-at="2019-01-23T22:03:27Z" depends-on-methods="com.demoaut.newtours.testcases.LoginTest.loginToMercuryTours" finished-at="2019-01-23T22:03:28Z">
+        <test-method status="PASS" signature="findFlightTest()[pri:2, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="findFlightTest" duration-ms="740" started-at="2019-01-24T17:40:37Z" depends-on-methods="com.demoaut.newtours.testcases.LoginTest.loginToMercuryTours" finished-at="2019-01-24T17:40:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightTest -->
-        <test-method status="PASS" signature="selectFlightTest()[pri:3, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="selectFlightTest" duration-ms="648" started-at="2019-01-23T22:03:28Z" finished-at="2019-01-23T22:03:28Z">
+        <test-method status="PASS" signature="selectFlightTest()[pri:3, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="selectFlightTest" duration-ms="755" started-at="2019-01-24T17:40:38Z" finished-at="2019-01-24T17:40:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFlightTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@61832929]" name="tearDown" is-config="true" duration-ms="126" started-at="2019-01-23T22:03:28Z" finished-at="2019-01-23T22:03:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="65" started-at="2019-01-24T17:40:39Z" finished-at="2019-01-24T17:40:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
