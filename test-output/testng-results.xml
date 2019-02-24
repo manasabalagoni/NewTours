@@ -5,12 +5,12 @@
       <![CDATA[Browser Opened]]>
     </line>
   </reporter-output>
-  <suite name="Flight_Reservation_Functional_Test" duration-ms="10549" started-at="2019-01-24T17:40:28Z" finished-at="2019-01-24T17:40:39Z">
+  <suite name="Flight_Reservation_Functional_Test" duration-ms="12802" started-at="2019-02-24T14:02:58Z" finished-at="2019-02-24T14:03:11Z">
     <groups>
     </groups>
-    <test name="Functional_Test" duration-ms="10549" started-at="2019-01-24T17:40:28Z" finished-at="2019-01-24T17:40:39Z">
+    <test name="Functional_Test" duration-ms="12802" started-at="2019-02-24T14:02:58Z" finished-at="2019-02-24T14:03:11Z">
       <class name="com.demoaut.newtours.testcases.LoginTest">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="launchBrowser" is-config="true" duration-ms="4943" started-at="2019-01-24T17:40:28Z" finished-at="2019-01-24T17:40:33Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="launchBrowser" is-config="true" duration-ms="6940" started-at="2019-02-24T14:02:58Z" finished-at="2019-02-24T14:03:05Z">
           <params>
             <param index="0">
               <value>
@@ -24,19 +24,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToMercuryTours()[pri:1, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="loginToMercuryTours" duration-ms="4015" started-at="2019-01-24T17:40:33Z" description="Description: Testing if user is abole to login to Mecrcury Tours" finished-at="2019-01-24T17:40:37Z">
+        <test-method status="PASS" signature="loginToMercuryTours()[pri:1, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="loginToMercuryTours" duration-ms="4118" started-at="2019-02-24T14:03:05Z" description="Description: Testing if user is abole to login to Mecrcury Tours" finished-at="2019-02-24T14:03:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToMercuryTours -->
-        <test-method status="PASS" signature="findFlightTest()[pri:2, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="findFlightTest" duration-ms="740" started-at="2019-01-24T17:40:37Z" depends-on-methods="com.demoaut.newtours.testcases.LoginTest.loginToMercuryTours" finished-at="2019-01-24T17:40:38Z">
+        <test-method status="PASS" signature="findFlightTest()[pri:2, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="findFlightTest" duration-ms="897" started-at="2019-02-24T14:03:09Z" depends-on-methods="com.demoaut.newtours.testcases.LoginTest.loginToMercuryTours" finished-at="2019-02-24T14:03:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightTest -->
-        <test-method status="PASS" signature="selectFlightTest()[pri:3, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="selectFlightTest" duration-ms="755" started-at="2019-01-24T17:40:38Z" finished-at="2019-01-24T17:40:39Z">
+        <test-method status="PASS" signature="selectFlightTest()[pri:3, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="selectFlightTest" duration-ms="696" started-at="2019-02-24T14:03:10Z" finished-at="2019-02-24T14:03:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFlightTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="65" started-at="2019-01-24T17:40:39Z" finished-at="2019-01-24T17:40:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demoaut.newtours.testcases.LoginTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="111" started-at="2019-02-24T14:03:10Z" finished-at="2019-02-24T14:03:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
