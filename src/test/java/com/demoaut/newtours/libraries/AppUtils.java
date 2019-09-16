@@ -16,7 +16,7 @@ public class AppUtils {
 		try {
 			 if (browserType.equalsIgnoreCase(IConstants.CHROME)) {
 				System.setProperty("webdriver.chrome.driver", IConstants.CHROMEDRIVERPATH);
-				options.binary_location = "/usr/bin/google-chrome";
+	
 				
 	/*			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 				chromePrefs.put("profile.default_content_settings.popups", 0);
@@ -29,6 +29,7 @@ public class AppUtils {
 				chromeOptions.addArguments("--disable-popup-blocking");
 				
 				driver= new ChromeDriver(chromeOptions);
+				options.binary_location = "/usr/bin/google-chrome";
 			} 
 
 			driver.manage().timeouts().implicitlyWait(IConstants.IMPLICITWAITSTND, TimeUnit.SECONDS);
