@@ -16,6 +16,7 @@ public class AppUtils {
 		try {
 			 if (browserType.equalsIgnoreCase(IConstants.CHROME)) {
 				System.setProperty("webdriver.chrome.driver", IConstants.CHROMEDRIVERPATH);
+				 System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 	
 				
 	/*			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
