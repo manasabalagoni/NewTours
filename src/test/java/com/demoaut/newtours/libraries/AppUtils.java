@@ -16,6 +16,7 @@ public class AppUtils {
 		try {
 			 if (browserType.equalsIgnoreCase(IConstants.CHROME)) {
 				System.setProperty("webdriver.chrome.driver", IConstants.CHROMEDRIVERPATH);
+				options.binary_location = "/usr/bin/google-chrome";
 				
 	/*			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 				chromePrefs.put("profile.default_content_settings.popups", 0);
