@@ -29,7 +29,7 @@ public class AppUtils {
 				chromeOptions.addArguments("--disable-popup-blocking");
 				
 				driver= new ChromeDriver(chromeOptions);
-				options.setBinary("/usr/bin/google-chrome");
+				
 			} 
 
 			driver.manage().timeouts().implicitlyWait(IConstants.IMPLICITWAITSTND, TimeUnit.SECONDS);
